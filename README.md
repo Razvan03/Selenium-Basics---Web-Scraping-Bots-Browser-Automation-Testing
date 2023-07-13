@@ -18,8 +18,8 @@ Only the first digits before the first '.' need to match:
 ## Table of Contents
 <ul>
 <li><a href="#Getting Started with the basics">Getting Started with the basics</a></li>
-<li><a href="#Explicit vs Implicit">Explicit vs Implicit</a></li>
-<li><a href="Sending Keys & CSS Selector">Sending Keys & CSS Selector</a></li>
+<li>[Explicit vs Implicit](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/tree/main/Selenium_Basics_1)</li>
+<li>[Sending Keys & CSS Selector](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/tree/main/Basic_Form_Test_2)</li>
 </ul>
 
 ## Getting Started with the basics
