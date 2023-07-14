@@ -19,7 +19,7 @@ Only the first digits before the first '.' need to match:
 
 -Getting Started with the basics
 
--[Explicit vs Implicit](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/tree/main/Selenium_Basics_1)
+-[Explicit vs Implicit Wait](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/tree/main/Selenium_Basics_1)
 
 -[Sending Keys & CSS Selector](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/tree/main/Basic_Form_Test_2)
 
