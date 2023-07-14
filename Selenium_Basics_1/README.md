@@ -1,4 +1,4 @@
-# Explicit vs Implicit
+# Explicit vs Implicit Wait
 
 ## Implicit Wait in Python Selenium:
 
