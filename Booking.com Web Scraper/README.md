@@ -23,7 +23,7 @@ class Booking(webdriver.Chrome):
         self.maximize_window()
 ```
 
-## In the __init__ method, the class constructor, several actions are performed:
+### In the __init__ method, the class constructor, several actions are performed:
 
 -The driver_path argument specifies the path to the ChromeDriver executable. If no path is provided, it defaults to "D:/SeleniumDrivers".
 
@@ -43,7 +43,7 @@ class Booking(webdriver.Chrome):
 
  
 
-## Besides the element identification methods used in the previous exercises,in this code you will also find:
+### Besides the element identification methods used in the previous exercises,in this code you will also find:
 
 -```find_element_by_xpath```: This method is used to locate elements on the web page by using XPath expressions.
 
@@ -79,7 +79,7 @@ first_result.click()
         decrease_adults_element.click()
 ```
 
-## Another smart idea when you want to find nested elements , instead of using the xpath, you can iterate over the child elements of an identified parent element:
+### Another smart idea when you want to find nested elements , instead of using the xpath, you can iterate over the child elements of an identified parent element:
 
 ```python
 	def apply_star_rating(self, *star_values): # The syntax '*star_value' allows the method to accept multiple star values as input.
@@ -137,7 +137,7 @@ class BookingReport:
         return collection
 ```
 
-## Finally, in order to have a better perspective on what the code does, here is the run.py:
+### Finally, in order to have a better perspective on what the code does, here is the run.py:
 
 ```python
 from booking.booking import Booking
@@ -173,3 +173,6 @@ except Exception as e:
 
 
 #### The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution. In my case it performed every single time.
+
+
+
