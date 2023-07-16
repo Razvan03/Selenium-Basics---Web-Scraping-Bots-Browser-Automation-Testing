@@ -174,4 +174,4 @@ except Exception as e:
 ```
 
 
-# The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution.
+The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution.
