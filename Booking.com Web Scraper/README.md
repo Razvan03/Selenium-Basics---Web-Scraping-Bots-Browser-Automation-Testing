@@ -43,8 +43,7 @@ class Booking(webdriver.Chrome):
 
  
 
-Besides the element identification methods used in the previous exercises,
-in this code you will also find:
+## Besides the element identification methods used in the previous exercises,in this code you will also find:
 
 -```find_element_by_xpath```: This method is used to locate elements on the web page by using XPath expressions.
 
