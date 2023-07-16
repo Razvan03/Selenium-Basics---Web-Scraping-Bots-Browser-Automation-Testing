@@ -47,6 +47,6 @@ WebDriverWait(driver, 30).until(   # Returneaza true atunci cand gaseste element
     )
 )
 ```
-## Demo:
+# Demo:
 
 ![](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/blob/main/Selenium_Basics_1/Gif1.gif)
