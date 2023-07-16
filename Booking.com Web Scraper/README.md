@@ -79,6 +79,25 @@ first_result.click()
         decrease_adults_element.click()
 ```
 
+### Another smart idea when you want to find nested elements , instead of using the xpath, you can iterate over the child elements of an identified parent element:
+
+```python
+	def apply_star_rating(self, *star_values): # The syntax '*star_value' allows the method to accept multiple star values as input.
+        star_filtration_box = self.driver.find_element_by_css_selector(
+            'div[data-filters-group="class"]'
+        )
+        for star_value in star_values:
+            star_elements = star_filtration_box.find_elements_by_css_selector(
+                f'div[data-filters-item="class:class={star_value}"]'
+            )
+            for star_element in star_elements:
+                star_checkbox = star_element.find_element_by_css_selector('input[type="checkbox"]')
+                if not star_checkbox.is_selected():
+                    star_checkbox.click()
+        #In the code above, the 'apply_star_rating' method selects the checkbox for the given star_values rating. It locates the parent div element with the attribute 'data-filters-group="class"' and finds the desired star elements using the attribute 'data-filters-item="class:class={star_value}"'.
+        #Then, it locates the checkbox within each star element and checks if it's already selected before clicking on it.
+```
+
 ## Another new feature I used is the ```get_attribute``` method that retrieves the value of a specified attribute of an element, such as innerHTML to get the inner HTML text. This is used in order to create the table with the informations of the hotels from the first page.
 
 ```python
@@ -118,27 +137,7 @@ class BookingReport:
         return collection
 ```
 
-Another smart idea when you want to find nested elements , instead of using the xpath, you can iterate over the child elements of an identified parent element:
-
-```python
-	def apply_star_rating(self, *star_values): # The syntax '*star_value' allows the method to accept multiple star values as input.
-        star_filtration_box = self.driver.find_element_by_css_selector(
-            'div[data-filters-group="class"]'
-        )
-        for star_value in star_values:
-            star_elements = star_filtration_box.find_elements_by_css_selector(
-                f'div[data-filters-item="class:class={star_value}"]'
-            )
-            for star_element in star_elements:
-                star_checkbox = star_element.find_element_by_css_selector('input[type="checkbox"]')
-                if not star_checkbox.is_selected():
-                    star_checkbox.click()
-        #In the code above, the 'apply_star_rating' method selects the checkbox for the given star_values rating. It locates the parent div element with the attribute 'data-filters-group="class"' and finds the desired star elements using the attribute 'data-filters-item="class:class={star_value}"'.
-        #Then, it locates the checkbox within each star element and checks if it's already selected before clicking on it.
-```
-
-
-Finally, in order to have a better perspective on what the code does, here is the run.py:
+## Finally, in order to have a better perspective on what the code does, here is the run.py:
 
 ```python
 from booking.booking import Booking
@@ -173,4 +172,4 @@ except Exception as e:
 ```
 
 
-The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution.
+### The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution.
