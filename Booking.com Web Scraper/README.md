@@ -70,13 +70,31 @@ first_result.click()
 ```
 
 ```python
-# Here I used XPath because the class attribute of the button I wanted to press is not a unique value as it is used mainly for css styling.
-# In the code below, the XPath expression selects the <input> tag with the specified id="group_adults".
-# Then, using the following-sibling axis, it navigates to the adjacent <div> sibling, and within that <div>, it finds the <button> element.
+    def select_adults(self, count):
+        selection_element = self.find_element_by_css_selector(
+            f'button[data-testid="occupancy-config"]'
+        )
+        selection_element.click()
+        # Here I used XPath because the class attribute of the button I wanted to press is not a unique value as it is used mainly for css styling.
+        # In the code below, the XPath expression selects the <input> tag with the specified id="group_adults".
+        # Then, using the following-sibling axis, it navigates to the adjacent <div> sibling, and within that <div>, it finds the <button> element.
+        while True:
+            decrease_adults_element=self.find_element_by_xpath('//input[@id="group_adults"]/following-sibling::div/button[@class="fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 cd7aa7c891"]')
+            decrease_adults_element.click()
 
-     while True:
-        decrease_adults_element=self.find_element_by_xpath('//input[@id="group_adults"]/following-sibling::div/button[@class="fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 cd7aa7c891"]')
-        decrease_adults_element.click()
+            adults_value_element = self.find_element_by_css_selector(
+                'input[id="group_adults"]'
+            )
+            adults_value = adults_value_element.get_attribute('value')
+            # If the value of adults reaches 1, then we should get out of the while loop
+            if int(adults_value) == 1:
+                break
+
+        increase_adults_element = self.find_element_by_xpath(
+            '//input[@id="group_adults"]/following-sibling::div/button[@class="fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 d64a4ea64d"]')
+
+        for i in range(count - 1):
+            increase_adults_element.click()
 ```
 
 ### Another smart idea when you want to find nested elements , instead of using the xpath, you can iterate over the child elements of an identified parent element:
