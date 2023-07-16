@@ -79,7 +79,7 @@ first_result.click()
         decrease_adults_element.click()
 ```
 
-### Another smart idea when you want to find nested elements , instead of using the xpath, you can iterate over the child elements of an identified parent element:
+## Another smart idea when you want to find nested elements , instead of using the xpath, you can iterate over the child elements of an identified parent element:
 
 ```python
 	def apply_star_rating(self, *star_values): # The syntax '*star_value' allows the method to accept multiple star values as input.
@@ -98,7 +98,7 @@ first_result.click()
         #Then, it locates the checkbox within each star element and checks if it's already selected before clicking on it.
 ```
 
-## Another new feature I used is the ```get_attribute``` method that retrieves the value of a specified attribute of an element, such as innerHTML to get the inner HTML text. This is used in order to create the table with the informations of the hotels from the first page.
+### Another new feature I used is the ```get_attribute``` method that retrieves the value of a specified attribute of an element, such as innerHTML to get the inner HTML text. This is used in order to create the table with the informations of the hotels from the first page.
 
 ```python
 class BookingReport:
@@ -172,4 +172,4 @@ except Exception as e:
 ```
 
 
-### The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution.
+#### The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution. In my case it performed every single time.
