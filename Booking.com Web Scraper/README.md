@@ -23,7 +23,7 @@ class Booking(webdriver.Chrome):
         self.maximize_window()
 ```
 
-## In the __init__ method, the class constructor, several actions are performed:
+#### In the __init__ method, the class constructor, several actions are performed:
 
 -The driver_path argument specifies the path to the ChromeDriver executable. If no path is provided, it defaults to "D:/SeleniumDrivers".
 
