@@ -193,4 +193,9 @@ except Exception as e:
 #### The bot's performance may not always meet 100% expectations due to the inherent challenges of timing and synchronization in web automation and the presence of asynchronous behavior on websites. These factors can occasionally lead to unexpected behavior or issues during bot execution. In my case it performed every single time.
 
 
+# Demo
+
+https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/assets/27735041/568fe9dc-cfb2-4d68-a16f-2ff22428326a
+
+
 
