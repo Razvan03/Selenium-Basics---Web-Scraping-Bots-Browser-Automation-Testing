@@ -23,7 +23,7 @@ class Booking(webdriver.Chrome):
         self.maximize_window()
 ```
 
-#### In the __init__ method, the class constructor, several actions are performed:
+## In the __init__ method, the class constructor, several actions are performed:
 
 -The driver_path argument specifies the path to the ChromeDriver executable. If no path is provided, it defaults to "D:/SeleniumDrivers".
 
@@ -79,7 +79,7 @@ first_result.click()
         decrease_adults_element.click()
 ```
 
-Another new feature I used is the ```get_attribute``` method that retrieves the value of a specified attribute of an element, such as innerHTML to get the inner HTML text. This is used in order to create the table with the informations of the hotels from the first page.
+## Another new feature I used is the ```get_attribute``` method that retrieves the value of a specified attribute of an element, such as innerHTML to get the inner HTML text. This is used in order to create the table with the informations of the hotels from the first page.
 
 ```python
 class BookingReport:
