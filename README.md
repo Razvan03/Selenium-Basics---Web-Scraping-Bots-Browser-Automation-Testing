@@ -23,6 +23,8 @@ Only the first digits before the first '.' need to match:
 
 -[Sending Keys & CSS Selector](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/tree/main/Basic_Form_Test_2)
 
+-[Booking.com Web Scraper](https://github.com/Razvan03/Selenium-Basics---Web-Scraping-Bots-Browser-Automation-Testing/tree/main/Booking.com%20Web%20Scraper)
+
 
 ## Getting Started with the basics
 
